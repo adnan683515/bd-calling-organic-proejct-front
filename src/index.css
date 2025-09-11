@@ -1,2 +1,27 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+:root {
+  --primary-color: #00B207; 
+  --secondary-color : #EDF2EE;
+  --accent-color : #2B572E; 
+}
+
+.primary{
+  background-color: var(--primary-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+.center{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.text{
+  color: var(--accent-color);
+}
