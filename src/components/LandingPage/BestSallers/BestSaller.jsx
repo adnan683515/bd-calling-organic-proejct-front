@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Features from '../Features/Features';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
+import { Rating } from 'react-simple-star-rating';
 
 const BestSaller = () => {
 
-    const {data:products=[]} = useQuery({
-        queryKey : 'all-products',
-        queryFn : (async ()=>{
+    const [click,setCliked] = useState(null)
+
+    const { data: products = [] } = useQuery({
+        queryKey: 'all-products',
+        queryFn: (async () => {
             const result = await axios.get('/products.json')
             return result?.data
         })
@@ -27,10 +30,25 @@ const BestSaller = () => {
 
                 <div className='grid flex-1 grid-cols-3 gap-3'>
                     {
-                        products.slice(0,6)?.map((item ,index)=>{
-                            return <div className='border  border-gray-400 rounded-lg ' key={index}>
+                        products.slice(0, 6)?.map((item, index) => {
+                            return <div onClick={()=>setCliked(index+1)} className={`border ${click == index+1 ? 'border-green-500 border-2 scale-105 transition duration-700':''} border-gray-400 px-1 rounded-lg flex justify-between`} key={index}>
                                 <div className='w-[120px] h-[120px]  flex items-center'>
                                     <img src={item?.image} alt="" />
+                                </div>
+
+                                <div className='flex items-center'>
+                                    <div>
+                                        <h1 className='text-[13px] text-gray-500'> {item?.title} </h1>
+                                        <h1 className='text-black text-[14px]'> ${item?.dollar} </h1>
+                                        <Rating
+                                            initialValue={item?.rating}
+                                            size={20}
+                                            readonly
+                                            allowFraction
+                                            SVGclassName="inline-block"
+                                            fillColor="#facc15"
+                                        />
+                                    </div>
                                 </div>
 
 
