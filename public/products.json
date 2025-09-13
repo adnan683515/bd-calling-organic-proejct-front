@@ -1,0 +1,50 @@
+[
+    {
+        "image": "https://i.ibb.co.com/TD2K156V/Image-33.png",
+        "title": "Chanise Cabbage",
+        "dollar": 14.44,
+        "rating": 3
+    },
+    {
+        "image": "https://i.ibb.co.com/FLH33VrC/Image-32.png",
+        "title": "Ladles Finger",
+        "dollar": 14.44,
+        "rating": 3
+    },
+    {
+        "image": "https://i.ibb.co.com/ZRB4HPNR/Image-31.png",
+        "title": "Green Capsicum",
+        "dollar": 14.44,
+        "rating": 3
+    },
+    {
+        "image": "https://i.ibb.co.com/Fb95vztb/Image-30.png",
+        "title": "Sweet Banana",
+        "dollar": 14.44,
+        "rating": 3
+    },
+    {
+        "image": "https://i.ibb.co.com/TjrBT28/Image-37.png",
+        "title": "Fresh Orange",
+        "dollar": 15.99,
+        "rating": 4
+    },
+    {
+        "image": "https://i.ibb.co.com/fYyR2G0z/Image-36.png",
+        "title": "Red Grapes",
+        "dollar": 18.5,
+        "rating": 5
+    },
+    {
+        "image": "https://i.ibb.co.com/B56p8CvH/Image-35.png",
+        "title": "Pineapple",
+        "dollar": 12.75,
+        "rating": 4
+    },
+    {
+        "image": "https://i.ibb.co.com/d4tyL8hs/Image-34.png",
+        "title": "Strawberry",
+        "dollar": 19.99,
+        "rating": 5
+    }
+]

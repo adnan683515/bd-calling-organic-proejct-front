@@ -10,6 +10,9 @@
   --accent-color : #2B572E; 
 }
 
+.txt-primary{
+  color: var(--primary-color);
+}
 .primary{
   background-color: var(--primary-color);
 }
