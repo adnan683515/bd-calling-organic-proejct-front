@@ -6,6 +6,8 @@ import pepe from '../../assets/images/papiya.png'
 import Cetagories from '../../components/LandingPage/Cetagories/Cetagories'
 import Counter from '../../components/LandingPage/CounterBox/counter'
 import BestSaller from '../../components/LandingPage/BestSallers/BestSaller'
+import LatestNews from '../../components/LandingPage/LatestNews/LatestNews'
+import blogBackround from '../../assets/images/Blog.png'
 
 
 export default function Home() {
@@ -39,6 +41,17 @@ export default function Home() {
 
       <div className='max-w-[1200px] mx-auto'>
         <BestSaller ></BestSaller>
+      </div>
+
+
+      <div className='bg-center bg-cover my-10' style={{
+        backgroundImage : "url('https://i.ibb.co.com/Kc0xN54B/Blog.png')"
+      }}>
+        <div className='max-w-[1200px] mx-auto'>
+
+          <LatestNews></LatestNews>
+
+        </div>
       </div>
     </div>
   )

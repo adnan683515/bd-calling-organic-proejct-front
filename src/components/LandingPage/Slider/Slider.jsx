@@ -17,7 +17,7 @@ const slides = [image1, image2, image3, image4, image5];
 
 export default function Slider() {
     return (
-        <div className="w-full h-[60vh] md:h-[80vh]">
+        <div className="w-full h-[60vh]   md:h-[80vh]">
             <Swiper
                 cssMode={true}
                 navigation={true}
@@ -26,11 +26,11 @@ export default function Slider() {
                 keyboard={true}
                 loop={true}
                 modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-                className="mySwiper"
+                className="mySwiper  "
             >
                 {slides.map((img, idx) => (
                     <SwiperSlide key={idx}>
-                        <div className="flex  flex-row items-center justify-between h-full px-4 md:px-20 gap-4">
+                        <div className="flex  flex-row items-center  justify-between h-full px-4 md:px-3 gap-4">
                             <div className="center w-[350px]  sm:w-[650px] sm:h-[400px]">
                                 <img src={img} alt={`slide-${idx}`} className="w-full h-full object-cover rounded-lg" />
                             </div>
