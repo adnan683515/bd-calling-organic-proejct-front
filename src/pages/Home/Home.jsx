@@ -8,6 +8,7 @@ import Cetagories from '../../components/LandingPage/Cetagories/Cetagories'
 import BestSaller from '../../components/LandingPage/BestSallers/BestSaller'
 import CountBox from '../../components/LandingPage/CounterBox/CountBox'
 
+
 export default function Home() {
   return (
     <div className=''>
@@ -39,6 +40,17 @@ export default function Home() {
 
       <div className='max-w-[1200px] mx-auto'>
         <BestSaller ></BestSaller>
+      </div>
+
+
+      <div className='bg-center bg-cover my-10' style={{
+        backgroundImage : "url('https://i.ibb.co.com/Kc0xN54B/Blog.png')"
+      }}>
+        <div className='max-w-[1200px] mx-auto'>
+
+        
+
+        </div>
       </div>
     </div>
   )

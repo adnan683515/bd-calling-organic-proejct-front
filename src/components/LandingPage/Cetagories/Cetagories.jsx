@@ -104,7 +104,7 @@ const Categories = () => {
                         <div>
                             <img src="https://i.ibb.co.com/jkTP8cHW/Image-28.png" alt="" />
                         </div>
-                        <div>
+                        <div className='border'>
                             <img src="https://i.ibb.co.com/JWXqQhWP/Image-29.png" alt="" />
                         </div>
                         <div>

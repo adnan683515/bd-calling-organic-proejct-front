@@ -5,7 +5,7 @@ import Slider from './Slider/Slider'
 
 const Hero = () => {
     return (
-        <div className='relative w-full bg-[#FFFFFF] h-[50vh] sm:h-[540px]'>
+        <div className='relative w-full   bg-[#eeffee] h-[50vh] sm:h-[540px]'>
             <img
                 src={bannar}
                 alt="banner"
@@ -17,7 +17,7 @@ const Hero = () => {
 
             <div className="relative flex flex-col items-center justify-center h-full gap-4">
 
-                <div className="w-full max-w-[90%] mx-auto">
+                <div className="w-full max-w-[90%]  mx-auto">
                     <Slider />
                 </div>
             </div>
