@@ -4,9 +4,9 @@ import Service from '../../components/LandingPage/Service/Service'
 import Features from '../../components/LandingPage/Features/Features'
 import pepe from '../../assets/images/papiya.png'
 import Cetagories from '../../components/LandingPage/Cetagories/Cetagories'
-import Counter from '../../components/LandingPage/CounterBox/counter'
-import BestSaller from '../../components/LandingPage/BestSallers/BestSaller'
 
+import BestSaller from '../../components/LandingPage/BestSallers/BestSaller'
+import CountBox from '../../components/LandingPage/CounterBox/CountBox'
 
 export default function Home() {
   return (
@@ -34,7 +34,7 @@ export default function Home() {
       </div>
 
       <div className='my-15'>
-        <Counter></Counter>
+        <CountBox></CountBox>
       </div>
 
       <div className='max-w-[1200px] mx-auto'>

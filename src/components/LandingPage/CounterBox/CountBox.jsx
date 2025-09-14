@@ -3,7 +3,7 @@ import puspo from '../../../assets/images/puspo.png'
 import massrum from '../../../assets/images/massrum.png'
 import { FaArrowRightLong } from 'react-icons/fa6';
 
-const Counter = () => {
+const CountBox = () => {
     return (
         <div>
             <div className='bg-[url(https://i.ibb.co.com/PfbCVDb/BG-1.png)] py-10 relative' >
@@ -100,4 +100,4 @@ const Counter = () => {
     );
 };
 
-export default Counter;
+export default CountBox;
