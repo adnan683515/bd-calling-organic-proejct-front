@@ -11,7 +11,7 @@ import begun from '../../../assets/images/begun.png'
 const Categories = () => {
     const [click, setClick] = useState(null);
     const [startIndex, setStartIndex] = useState(0);
-    const [endIndex, setEndIndex] = useState(6);
+    const [endIndex, setEndIndex] = useState(5);
 
     const { data: allCategories = [] } = useQuery({
         queryKey: ['categories'],
@@ -59,7 +59,7 @@ const Categories = () => {
                                 onClick={handlePrev}
                             />
 
-                            <div className="grid flex-1 grid-cols-3 sm:grid-cols-6 gap-2">
+                            <div className="grid flex-1 grid-cols-3 sm:grid-cols-5 gap-2">
                                 {allCategories.slice(startIndex, endIndex).map((item, i) => {
                                     const originalIndex = startIndex + i;
                                     return (

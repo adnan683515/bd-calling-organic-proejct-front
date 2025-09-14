@@ -7,7 +7,8 @@ import Cetagories from '../../components/LandingPage/Cetagories/Cetagories'
 
 import BestSaller from '../../components/LandingPage/BestSallers/BestSaller'
 import CountBox from '../../components/LandingPage/CounterBox/CountBox'
-
+import LatestNews from '../../components/LandingPage/LatestNews/LatestNews'
+import Comments from '../../components/LandingPage/Comments/Comments'
 
 export default function Home() {
   return (
@@ -44,14 +45,22 @@ export default function Home() {
 
 
       <div className='bg-center bg-cover my-10' style={{
-        backgroundImage : "url('https://i.ibb.co.com/Kc0xN54B/Blog.png')"
+        backgroundImage: "url('https://i.ibb.co.com/Kc0xN54B/Blog.png')"
       }}>
         <div className='max-w-[1200px] mx-auto'>
 
-        
+          <LatestNews></LatestNews>
 
         </div>
       </div>
+
+
+      <div className='max-w-[1200px] mx-auto'>
+        <Comments></Comments>
+      </div>
+
+      
+    
     </div>
   )
 }

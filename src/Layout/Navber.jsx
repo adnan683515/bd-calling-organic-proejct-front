@@ -4,15 +4,20 @@ import { FaChevronDown } from 'react-icons/fa'
 import logo from '../assets/images/Logo.png'
 import { FiPhoneCall } from 'react-icons/fi'
 import { GiShoppingCart } from 'react-icons/gi'
+import { Link } from 'react-router'
 
 const navberMenus = [
-    { label: 'Home', icon: <FaChevronDown /> },
-    { label: 'Shop', icon: <FaChevronDown /> },
-    { label: 'Blog', icon: <FaChevronDown /> },
-    { label: 'About', icon: '' },
+    { label: 'Home', icon: <FaChevronDown />, lnk: '/' },
+    { label: 'Shop', icon: <FaChevronDown />, lnk: '/shop' },
+    { label: 'Blog', icon: <FaChevronDown />, lnk: '/blog' },
+    { label: 'About', icon: '', lnk: '/about' },
 ]
 
 export default function Navber() {
+
+
+
+
     return (
         <div className="w-full sticky top-0 z-50 backdrop-blur-lg">
             <div className="bg-secondary px-4 py-2 md:px-[100px] lg:px-[200px]">
@@ -39,13 +44,14 @@ export default function Navber() {
             <div className="flex flex-row justify-between items-center px-1 gap-4 sm:px-4 py-4 md:px-[100px] lg:px-[200px]">
                 <div className="flex gap-4 flex-wrap justify-center md:justify-start">
                     {navberMenus.map((item, index) => (
-                        <div
-                            key={index}
-                            className="flex items-center gap-1 text-gray-500 hover:text-black cursor-pointer"
-                        >
-                            <h1 className="text-[11px] md:text-base">{item.label}</h1>
-                            {item.icon && <span>{item.icon}</span>}
-                        </div>
+                        <Link to={item?.lnk} key={index}>
+                            <div
+
+                                className="flex items-center gap-1 text-gray-500 hover:text-black cursor-pointer"
+                            >
+                                <h1 className={`text-[13x] ${item?.label == 'Home' ? 'text-green-500' : 'text-base'} `}>{item.label}</h1>
+                                {item.icon && <span>{item.icon}</span>}
+                            </div></Link>
                     ))}
                 </div>
 

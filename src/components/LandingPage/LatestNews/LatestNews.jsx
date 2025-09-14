@@ -13,7 +13,6 @@ const months = [
 
 export default function LatestNews() {
 
-
     const { data: allNews = [], isLoading } = useQuery({
         queryKey: 'news',
         queryFn: (async () => {
@@ -22,17 +21,11 @@ export default function LatestNews() {
         })
     })
 
-
-
-
-
-
     if (isLoading) {
         return <div className='flex justify-center items-center'>
             <h1>Loading....</h1>
         </div>
     }
-
 
     return (
         <div className='py-10 relative '>
@@ -43,71 +36,62 @@ export default function LatestNews() {
                 </div>
             </div>
 
-            <div className='grid  pt-5 gap-9 grid-cols-1 sm:grid-cols-4'>
+            <div className='grid p-2 sm:pt-5 gap-9 grid-cols-1 sm:grid-cols-3'>
                 {
-
                     allNews?.map((item, index) => {
 
                         let date = new Date(item?.date)
-                        console.log(date)
                         let getDate = date.getDate()
-                        let Month = date?.getMonth() + 1
+                        let Month = date?.getMonth()
 
+                        return (
+                            <div className='sm:w-[300px] bg-white rounded-md my-2 shadow-lg' key={index}>
+                                <div className='relative'>
+                                    <img className='w-full h-[200px]' src={item?.image} alt="" />
 
-
-                        return <div className='w-[300px]  bg-white rounded-md my-2 shadow-lg' key={index}>
-                            <div className='relative'>
-                                <img className='w-full h-[200px]' src={item?.image} alt="" />
-
-                                <div className='absolute bottom-3 left-2 px-2 py-1 flex justify-center items-center bg-[#FFFFFF] rounded-sm'>
-                                    <div >
-                                        <h1 className='text-[11px] text-center'> {getDate} </h1>
-                                        <h1 className='text-[12px] text-center'> {months[Month].slice(0, 3)} </h1>
+                                    <div className='absolute bottom-3 left-2 px-2 py-1 flex justify-center items-center bg-[#FFFFFF] rounded-sm'>
+                                        <div>
+                                            <h1 className='text-[11px] text-center'>{getDate}</h1>
+                                            <h1 className='text-[12px] text-center'>{months[Month].slice(0, 3)}</h1>
+                                        </div>
                                     </div>
-
                                 </div>
 
+                                <div className='p-2 space-y-3'>
 
-                            </div>
-
-                            <div className='p-2 space-y-1'>
-                                <div className='flex justify-between text-gray-400  text-[12px] '>
-                                    <div className='flex gap-1'>
-                                        <div className='center'>
+                                    <div className='flex justify-between text-gray-400 text-[12px]'>
+                                        <div className='flex gap-1'>
                                             <CiShoppingTag />
+                                            <h1>Food</h1>
                                         </div>
-                                        <h1>Food</h1>
-                                    </div>
-
-                                    <div className='flex gap-1'>
-                                        <div className='center'>
+                                        <div className='flex gap-1'>
                                             <CiUser />
+                                            <h1>Admin</h1>
                                         </div>
-
-                                        <h1>Admin</h1>
                                     </div>
 
-                                    <div className='flex gap-1'>
-                                        <div className='center'>
-                                            <FaRegCommentAlt />
-                                        </div>
+
+                                    <div className='flex justify-center items-center gap-1 text-gray-400 text-[12px]'>
+                                        <FaRegCommentAlt />
                                         <h1>Comments</h1>
                                     </div>
-                                </div>
-                                <h1 className=' text-[14px]'>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h1>
 
-                                <div className='txt-primary  text-[14px] flex gap-2'>
-                                    <div>
+
+                                    <h1 className='text-[14px]'>
+                                        Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.
+                                    </h1>
+
+
+                                    <div className='txt-primary text-[14px] flex gap-2'>
                                         <h1>Read More</h1>
-                                    </div>
-                                    <div className='center '>
-                                        <FaArrowRightLong />
+                                        <div className='center'>
+                                            <FaArrowRightLong />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        )
                     })
-
                 }
             </div>
 
