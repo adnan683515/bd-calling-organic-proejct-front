@@ -3,6 +3,7 @@ import Navber from './Navber'
 import Footer from './Footer'
 import { Outlet, useLocation } from 'react-router'
 import NavberTwo from './NavberTwo'
+import NavBannar from './NavBannar'
 
 export default function MainLayout() {
 
@@ -14,6 +15,10 @@ export default function MainLayout() {
 
       {
         location?.pathname == '/' ? <Navber> </Navber> : <NavberTwo></NavberTwo>
+      }
+
+      {
+         location?.pathname != '/' && <NavBannar></NavBannar>
       }
 
       <div className='min-h-[calc(100vh-500px)] '>

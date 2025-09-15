@@ -13,31 +13,29 @@ import axios from "axios";
 import { Rating } from "react-simple-star-rating";
 
 const popularTags = [
-  "Health",
-  "Meat",
-  "Snack",
-  "Drinks",
-  "Vegetables",
-  "Fruits",
-  "Organic",
-  "Dairy",
-  "Seafood",
-  "Bakery",
-  "Spices",
-  "Frozen",
-  "Grains",
-  "Beverages",
-  "Condiments"
+  "Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage",
+  "Fruit", "Fresh", "Apple",
+  "Fish", "Protein", "Omega-3",
+  "Organic", "Carrot",
+  "Banana", "Energy", "Sweet",
+  "Orange", "Okra", "Chinese Cabbage", "Premium",
+  "Grapes", "Red Grapes",
+  "Pineapple", "Tropical",
+  "Strawberry", "Red Berry",
+  "Capsicum", "Green",
+  "Mix"
 ];
 
 
-const FilterSection = () => {
+const FilterSection = ({ setSearch, search }) => {
+
+
   const [value, setValue] = useState([10, 70]);
 
   const ratings = [5, 4, 3, 2, 1];
-  const [tag, setTag] = useState(null)
 
-  const { data: cetagories = [], isLoading } = useQuery({
+
+  const { data: cetagories = [] } = useQuery({
     queryKey: 'cetagories',
     queryFn: (async () => {
       const result = await axios.get('/allcetagories.json')
@@ -73,6 +71,12 @@ const FilterSection = () => {
                     <input
                       type="radio"
                       name="category"
+                      onChange={() => {
+
+                        const obj = { type: 'cetegory', value: item?.name }
+
+                        setSearch(obj)
+                      }}
                       value={item.id}
                       className="mr-2 text-white accent-green-500"
                     />
@@ -138,6 +142,7 @@ const FilterSection = () => {
                   {ratings.map((rate) => (
                     <label
                       key={rate}
+                      onClick={() => setSearch({ type: 'rating', value: rate })}
                       className="flex items-center gap-2 cursor-pointer hover:text-green-600"
                     >
                       <input
@@ -145,7 +150,7 @@ const FilterSection = () => {
                         name="rating"
                         value={rate}
                         className="w-5 h-5 accent-green-500 appearance-none border-2 border-gray-400 rounded-sm checked:bg-green-500 checked:border-green-500"
-                      // now it looks like a box
+
                       />
                       <Rating
                         initialValue={rate}
@@ -155,7 +160,7 @@ const FilterSection = () => {
                         SVGclassName="inline-block"
                         fillColor="#facc15"
                       />
-                      <span className="text-sm text-gray-700">{rate} stars & up</span>
+
                     </label>
                   ))}
                 </div>
@@ -182,9 +187,9 @@ const FilterSection = () => {
                 <div className="flex flex-wrap gap-2">
                   {popularTags.map((tagName, index) => (
                     <span
-                      onClick={() => setTag(tagName)}
                       key={index}
-                      className={` rounded-l-full rounded-r-full ${tag == tagName ? 'primary text-white' : 'bg-gray-100 '} px-3 py-1 text-sm cursor-pointer`}
+                      onClick={() => setSearch({ type: 'tags', value: tagName })}
+                      className={` rounded-l-full rounded-r-full ${search?.value == tagName ? 'primary text-white' : 'bg-gray-100 '} px-3 py-1 text-sm cursor-pointer`}
                     >
                       {tagName}
                     </span>

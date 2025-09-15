@@ -1,0 +1,446 @@
+[
+    {
+        "id": "251594",
+        "name": "Chinese Cabbage",
+        "description": "Fresh and crunchy Chinese cabbage grown naturally in healthy soil. A versatile vegetable that adds texture and flavor to salads, soups, and stir-fry recipes. Rich in Vitamin C, antioxidants, and essential minerals for a balanced diet. Perfect choice for anyone who wants nutritious and tasty greens daily.",
+        "price": {
+            "original_price": "$48.00",
+            "discounted_price": "$17.28",
+            "discount_percentage": 64
+        },
+        "availability": "In Stock",
+        "sku": "251594",
+        "brand": "Farmary",
+        "category": "Vegetables",
+        "tags": [
+            "Vegetables",
+            "Healthy",
+            "Chinese",
+            "Cabbage",
+            "Green Cabbage"
+        ],
+        "additional_information": {
+            "weight": "100g",
+            "organic": true,
+            "nutrition": "100 g of fresh leaves provides 20% of daily Vitamin C."
+        },
+        "images": [
+            "https://i.ibb.co.com/gLj8s6Z2/top-close-view-green-salad-along-withful-bell-peppers-spicy-peppers-white-desk-vegetable-food-meal-i.jpg",
+            "https://i.ibb.co.com/xKZvnGN0/healthy-vegetables-wooden-table.jpg"
+        ],
+        "rating": 4
+    },
+    {
+        "id": "251595",
+        "name": "Fresh Apples",
+        "description": "Crisp and juicy apples freshly picked from local orchards. These apples are naturally sweet and packed with nutrients that boost energy. High in dietary fiber, they are excellent for digestion and overall wellness. Perfect for snacking, juicing, or adding to your favorite desserts and salads.",
+        "price": {
+            "original_price": "$30.00",
+            "discounted_price": "$18.99",
+            "discount_percentage": 37
+        },
+        "availability": "In Stock",
+        "sku": "251595",
+        "brand": "OrchardFresh",
+        "category": "Fruits",
+        "tags": [
+            "Fruit",
+            "Fresh",
+            "Healthy",
+            "Apple"
+        ],
+        "additional_information": {
+            "weight": "1kg",
+            "organic": true,
+            "nutrition": "1 apple provides 15% of daily fiber."
+        },
+        "images": [
+            "https://i.ibb.co.com/V0xdxq4r/basket-full-vegetables.jpg",
+            "https://i.ibb.co.com/qY4ZrzzZ/pexels-wendywei-1656666.jpg"
+        ],
+        "rating": 5
+    },
+    {
+        "id": "251596",
+        "name": "Salmon Fillet",
+        "description": "Premium quality wild-caught salmon fillets with a rich buttery flavor. Known for its high protein content and omega-3 fatty acids that support heart health. Easy to cook, making it perfect for grilling, baking, or pan-frying. A delicious seafood choice that combines taste with excellent nutrition.",
+        "price": {
+            "original_price": "$60.00",
+            "discounted_price": "$40.00",
+            "discount_percentage": 33
+        },
+        "availability": "In Stock",
+        "sku": "251596",
+        "brand": "SeaFresh",
+        "category": "Seafood",
+        "tags": [
+            "Fish",
+            "Healthy",
+            "Protein",
+            "Omega-3"
+        ],
+        "additional_information": {
+            "weight": "500g",
+            "organic": false,
+            "nutrition": "High in protein and omega-3 fatty acids."
+        },
+        "images": [
+            "https://i.ibb.co.com/pB3j0j5p/anna-pelzer-IGf-IGP5-ONV0-unsplash.jpg",
+            "https://i.ibb.co.com/CszcY8mZ/vijesh-kolodi-RU-T5-Nime-Bg-unsplash.jpg"
+        ],
+        "rating": 4
+    },
+    {
+        "id": "251597",
+        "name": "Organic Carrots",
+        "description": "Naturally grown organic carrots full of crunch and sweetness. Perfect for soups, curries, salads, or even eating raw as a healthy snack. Packed with beta-carotene, Vitamin A, and antioxidants for better vision and skin. A must-have vegetable for maintaining a healthy and balanced lifestyle.",
+        "price": {
+            "original_price": "$20.00",
+            "discounted_price": "$12.50",
+            "discount_percentage": 38
+        },
+        "availability": "In Stock",
+        "sku": "251597",
+        "brand": "Farmary",
+        "category": "Vegetables",
+        "tags": [
+            "Vegetables",
+            "Organic",
+            "Healthy",
+            "Carrot"
+        ],
+        "additional_information": {
+            "weight": "500g",
+            "organic": true,
+            "nutrition": "Rich in beta-carotene and Vitamin A."
+        },
+        "images": [
+            "https://i.ibb.co.com/W6Fw0Nsn/carrots-bunch.jpg",
+            "https://i.ibb.co.com/j4m7z9zD/fresh-carrots-market.jpg"
+        ],
+        "rating": 5
+    },
+    {
+        "id": "251598",
+        "name": "Bananas",
+        "description": "Sweet and ripe bananas that give instant energy and taste amazing. A great fruit for kids and adults, perfect for smoothies, snacks, or desserts. High in potassium and natural sugars, keeping your body fueled throughout the day. One of the most affordable and nutritious fruits for everyday meals.",
+        "price": {
+            "original_price": "$15.00",
+            "discounted_price": "$9.99",
+            "discount_percentage": 33
+        },
+        "availability": "In Stock",
+        "sku": "251598",
+        "brand": "Tropicana",
+        "category": "Fruits",
+        "tags": [
+            "Fruit",
+            "Banana",
+            "Healthy",
+            "Energy"
+        ],
+        "additional_information": {
+            "weight": "1 dozen",
+            "organic": true,
+            "nutrition": "Excellent source of potassium."
+        },
+        "images": [
+            "https://i.ibb.co.com/Y4D9s6Dp/melon-pomegranate-quince.jpg",
+            "https://i.ibb.co.com/x5JKbR0s/banana-bunch.jpg"
+        ],
+        "rating": 4
+    },
+    {
+        "id": "251599",
+        "name": "Broccoli",
+        "description": "Fresh organic broccoli with a rich green color and crisp texture. A powerhouse of nutrients that supports immunity and overall health. Perfect for steaming, roasting, or adding to stir-fried dishes. An excellent source of fiber, Vitamin C, and antioxidants for a balanced diet.",
+        "price": {
+            "original_price": "$25.00",
+            "discounted_price": "$16.00",
+            "discount_percentage": 36
+        },
+        "availability": "In Stock",
+        "sku": "251599",
+        "brand": "Farmary",
+        "category": "Vegetables",
+        "tags": [
+            "Vegetables",
+            "Healthy",
+            "Broccoli",
+            "Organic"
+        ],
+        "additional_information": {
+            "weight": "300g",
+            "organic": true,
+            "nutrition": "Rich in Vitamin C and dietary fiber."
+        },
+        "images": [
+            "https://i.ibb.co.com/hD4Fyqkn/broccoli-wooden-table.jpg",
+            "https://i.ibb.co.com/4tyQ2Bxd/fresh-broccoli-close.jpg"
+        ],
+        "rating": 5
+    },
+    {
+        "id": "251600",
+        "name": "Sweet Banana",
+        "description": "Naturally sweet bananas harvested from tropical farms. Ideal for smoothies, milkshakes, and desserts, bringing natural sweetness. High in potassium and energy, making it a perfect snack for fitness lovers. An everyday fruit that boosts your energy while satisfying your sweet tooth.",
+        "price": {
+            "original_price": "$20.00",
+            "discounted_price": "$14.44",
+            "discount_percentage": 28
+        },
+        "availability": "In Stock",
+        "sku": "251600",
+        "brand": "Tropicana",
+        "category": "Fruits",
+        "tags": [
+            "Fruit",
+            "Banana",
+            "Sweet"
+        ],
+        "additional_information": {
+            "weight": "1 dozen",
+            "organic": true,
+            "nutrition": "High in potassium and natural sugars."
+        },
+        "images": [
+            "https://i.ibb.co.com/Fb95vztb/Image-30.png",
+            "https://i.ibb.co.com/TjrBT28/Image-37.png"
+        ],
+        "rating": 4
+    },
+    {
+        "id": "251601",
+        "name": "Spinach Leaves",
+        "description": "Fresh organic spinach leaves rich in iron and nutrients. Perfect for salads, curries, smoothies, or healthy side dishes. A superfood that supports strong bones, better skin, and overall energy. Easy to cook and essential for a balanced diet every day.",
+        "price": {
+            "original_price": "$22.00",
+            "discounted_price": "$14.99",
+            "discount_percentage": 32
+        },
+        "availability": "In Stock",
+        "sku": "251601",
+        "brand": "GreenLeaf",
+        "category": "Vegetables",
+        "tags": [
+            "Vegetables",
+            "Healthy",
+            "Spinach",
+            "Organic"
+        ],
+        "additional_information": {
+            "weight": "200g",
+            "organic": true,
+            "nutrition": "Rich in iron and vitamins."
+        },
+        "images": [
+            "https://i.ibb.co.com/9sP7B2f/spinach-leaves.jpg",
+            "https://i.ibb.co.com/QP4Jc7m/fresh-spinach-bowl.jpg"
+        ],
+        "rating": 5
+    },
+    {
+        "id": "251602",
+        "name": "Tomatoes",
+        "description": "Bright red juicy tomatoes perfect for cooking or eating fresh. Loaded with lycopene, Vitamin C, and antioxidants that promote good health. Ideal for sauces, salads, curries, and a wide range of recipes. Freshly picked to ensure great taste and maximum nutrition.",
+        "price": {
+            "original_price": "$18.00",
+            "discounted_price": "$12.00",
+            "discount_percentage": 33
+        },
+        "availability": "In Stock",
+        "sku": "251602",
+        "brand": "Farmary",
+        "category": "Vegetables",
+        "tags": [
+            "Vegetables",
+            "Tomato",
+            "Healthy"
+        ],
+        "additional_information": {
+            "weight": "500g",
+            "organic": true,
+            "nutrition": "High in Vitamin C and antioxidants."
+        },
+        "images": [
+            "https://i.ibb.co.com/fYyR2G0z/Image-36.png",
+            "https://i.ibb.co.com/B56p8CvH/Image-35.png"
+        ],
+        "rating": 5
+    },
+    {
+        "id": "251603",
+        "name": "Mangoes",
+        "description": "Delicious sweet mangoes grown in tropical farms with care. Known as the king of fruits for its irresistible flavor and aroma. Rich in Vitamin A, Vitamin C, and antioxidants that boost immunity. Perfect for juices, desserts, and refreshing summer treats.",
+        "price": {
+            "original_price": "$40.00",
+            "discounted_price": "$28.00",
+            "discount_percentage": 30
+        },
+        "availability": "In Stock",
+        "sku": "251603",
+        "brand": "Tropicana",
+        "category": "Fruits",
+        "tags": [
+            "Fruit",
+            "Mango",
+            "Sweet",
+            "Summer"
+        ],
+        "additional_information": {
+            "weight": "1kg",
+            "organic": true,
+            "nutrition": "Rich in Vitamin C and natural sugars."
+        },
+        "images": [
+            "https://i.ibb.co.com/TjrBT28/Image-37.png",
+            "https://i.ibb.co.com/d4tyL8hs/Image-34.png"
+        ],
+        "rating": 5
+    },
+    {
+        "id": "251604",
+        "name": "Strawberries",
+        "description": "Juicy and fresh strawberries full of sweetness and flavor. A perfect fruit for desserts, smoothies, or eating fresh. Packed with Vitamin C and antioxidants to boost immunity. Naturally sweet and low in calories for guilt-free snacking.",
+        "price": {
+            "original_price": "$35.00",
+            "discounted_price": "$22.00",
+            "discount_percentage": 37
+        },
+        "availability": "In Stock",
+        "sku": "251604",
+        "brand": "BerryLand",
+        "category": "Fruits",
+        "tags": [
+            "Fruit",
+            "Strawberry",
+            "Sweet"
+        ],
+        "additional_information": {
+            "weight": "250g",
+            "organic": true,
+            "nutrition": "Excellent source of Vitamin C."
+        },
+        "images": [
+            "https://i.ibb.co.com/xKZvnGN0/healthy-vegetables-wooden-table.jpg",
+            "https://i.ibb.co.com/fYyR2G0z/Image-36.png"
+        ],
+        "rating": 5
+    },
+    {
+        "id": "251605",
+        "name": "Chicken Breast",
+        "description": "Skinless boneless chicken breast with lean protein and great taste. Perfect for grilling, stir-frying, or baking healthy dishes. A versatile option for fitness lovers and daily meal plans. High in protein, low in fat, making it an essential ingredient for muscle growth.",
+        "price": {
+            "original_price": "$55.00",
+            "discounted_price": "$39.99",
+            "discount_percentage": 27
+        },
+        "availability": "In Stock",
+        "sku": "251605",
+        "brand": "FarmFresh",
+        "category": "Meat",
+        "tags": [
+            "Meat",
+            "Chicken",
+            "Protein"
+        ],
+        "additional_information": {
+            "weight": "1kg",
+            "organic": false,
+            "nutrition": "Excellent source of lean protein."
+        },
+        "images": [
+            "https://i.ibb.co.com/B56p8CvH/Image-35.png",
+            "https://i.ibb.co.com/d4tyL8hs/Image-34.png"
+        ],
+        "rating": 4
+    },
+    {
+        "id": "251606",
+        "name": "Orange Juice",
+        "description": "Refreshing orange juice made from freshly squeezed oranges. Packed with Vitamin C and natural sweetness to keep you energized. A healthy drink for breakfast or anytime of the day. Enjoy it chilled for the perfect refreshing experience.",
+        "price": {
+            "original_price": "$12.00",
+            "discounted_price": "$8.50",
+            "discount_percentage": 29
+        },
+        "availability": "In Stock",
+        "sku": "251606",
+        "brand": "JuicyFresh",
+        "category": "Beverages",
+        "tags": [
+            "Juice",
+            "Beverage",
+            "Orange"
+        ],
+        "additional_information": {
+            "weight": "1L",
+            "organic": true,
+            "nutrition": "High in Vitamin C."
+        },
+        "images": [
+            "https://i.ibb.co.com/Y4D9s6Dp/melon-pomegranate-quince.jpg",
+            "https://i.ibb.co.com/x5JKbR0s/banana-bunch.jpg"
+        ],
+        "rating": 4
+    },
+    {
+        "id": "251607",
+        "name": "Brown Rice",
+        "description": "Nutritious brown rice rich in fiber and essential minerals. A healthier alternative to white rice for everyday meals. Supports better digestion and long-lasting energy release. Perfect base for curries, stir-fry, and wholesome bowls.",
+        "price": {
+            "original_price": "$28.00",
+            "discounted_price": "$20.00",
+            "discount_percentage": 29
+        },
+        "availability": "In Stock",
+        "sku": "251607",
+        "brand": "GrainHouse",
+        "category": "Grains",
+        "tags": [
+            "Rice",
+            "Grain",
+            "Healthy"
+        ],
+        "additional_information": {
+            "weight": "5kg",
+            "organic": true,
+            "nutrition": "High in fiber and minerals."
+        },
+        "images": [
+            "https://i.ibb.co.com/TjrBT28/Image-37.png",
+            "https://i.ibb.co.com/Fb95vztb/Image-30.png"
+        ],
+        "rating": 5
+    },
+    {
+        "id": "251608",
+        "name": "Cheddar Cheese",
+        "description": "Rich and creamy cheddar cheese made from pure cow’s milk. A perfect addition to sandwiches, burgers, and pasta dishes. Source of calcium and protein for healthy bones. Smooth texture and bold flavor that everyone loves.",
+        "price": {
+            "original_price": "$18.00",
+            "discounted_price": "$12.50",
+            "discount_percentage": 31
+        },
+        "availability": "In Stock",
+        "sku": "251608",
+        "brand": "DairyPure",
+        "category": "Dairy",
+        "tags": [
+            "Cheese",
+            "Dairy",
+            "Milk"
+        ],
+        "additional_information": {
+            "weight": "200g",
+            "organic": false,
+            "nutrition": "High in calcium and protein."
+        },
+        "images": [
+            "https://i.ibb.co.com/qY4ZrzzZ/pexels-wendywei-1656666.jpg",
+            "https://i.ibb.co.com/Fb95vztb/Image-30.png"
+        ],
+        "rating": 5
+    }
+]
